@@ -52,7 +52,7 @@ export const WebSocketProvider: React.FC<{ children: React.ReactNode }> = ({
       socketRef.current.close();
     }
 
-    const wsUrl = createWebSocketUrl("/wss/notification") + `?token=${jwtToken}`;
+    const wsUrl = createWebSocketUrl("/ws/notification") + `?token=${jwtToken}`;
     socketRef.current = new WebSocket(wsUrl);
 
     socketRef.current.onmessage = (event) => {
