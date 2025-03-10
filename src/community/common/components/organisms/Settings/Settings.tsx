@@ -171,7 +171,7 @@ const SettingsSection: FC = () => {
         </>
       )}
 
-      {globalLoginMethod === "CREDENTIALS" && (
+      {/* {globalLoginMethod === "CREDENTIALS" && ( */}
         <Box sx={{ py: "1.5rem" }}>
           <Typography variant="h2" sx={{ pb: "0.75rem" }}>
             {translatedText(["securitySettingsTitle"])}
@@ -193,7 +193,7 @@ const SettingsSection: FC = () => {
             }}
           />
         </Box>
-      )}
+      {/* )} */}
     </>
   );
 };
